@@ -1,7 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
-body,td,th,p{
+body,
+td,
+th,
+p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
@@ -40,7 +43,18 @@ h1, h2, h3, h4, h5, h6 {
 main{
 	width:100%;
 }
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, 
+aside, 
+canvas, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section {
 	display: block;
 }
 #maincontent {
@@ -56,7 +70,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   position: fixed;
     left: 0;
     bottom: 0;
-  padding: 25px;
+  padding: 25px 0;
   text-align: center;
   text-transform: uppercase;
   width:100%;
@@ -112,14 +126,19 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-  height: 400px;
+  height: 30hv;
   width: 100%;
+  
   background-color: #ccc;
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
   height: 50px;
+  display:block;
+  height: 30px;
+  display:flex;
+  flex-wrap: wrap;
   background-color: #3397DB;
   align-items: center;
 }
@@ -137,6 +156,7 @@ nav h1 a {
   font-size: 11pt;
   height: 35px;
   letter-spacing: 0;
+  height: 25px;
   margin: 10px;
   padding: 0 10px;
   width: 200px;
@@ -144,6 +164,8 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #f3f3f3;
   list-style: outside none none;
   width:100%;

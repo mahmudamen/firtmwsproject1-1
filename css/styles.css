@@ -414,17 +414,6 @@ nav h1 a {
     text-decoration: none;
     text-transform: uppercase;
 }	
-#restaurants-list li {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    font-family: Arial,sans-serif;
-    margin: 5px;
-    width: 25%;
-	min-height: 300px;
-    float: left;
-    padding: 5px 5px 5px;
-    text-align: left;
-}
 #restaurants-list p {
   margin: 0;
   font-size: 7pt;
@@ -474,6 +463,7 @@ nav h1 a {
     margin: 5px;
     width: 25%;
     float: left;
+	    min-height: 350px;
     padding: 5px 5px 5px;
     text-align: left;
 }

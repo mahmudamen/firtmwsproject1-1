@@ -250,6 +250,7 @@ nav h1 a {
     text-align: center;
     text-transform: uppercase;
     position: fixed;
+	bottom: 0px;
 
 }
 #restaurant-name {

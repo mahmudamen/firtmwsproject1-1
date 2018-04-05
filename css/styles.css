@@ -59,6 +59,7 @@ header{
 }
 #maincontent {
   min-height: 100%;
+  width: 100%;
 }
 #footer {
   background-color: #444;
@@ -289,7 +290,16 @@ nav h1 a {
   width: 50%;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 30px 40px 40px;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #fff;
+    border: 2px solid #f3f3f3;
+    display: block;
+    list-style-type: none;
+    margin: 0 0 30px;
+    width: 50%;
+    border-radius: 30px 0 30px 0;
+    overflow: hidden;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -301,6 +311,8 @@ nav h1 a {
 #reviews-list {
   margin: 0;
   padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 #reviews-list li {
   background-color: #fff;

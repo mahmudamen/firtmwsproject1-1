@@ -3,14 +3,24 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('restaurant').then(cache => {
       return cache.addAll([
-        `/`,
-        `/index.html?timestamp=${timeStamp}`,
-       '/restaurant.html?timestamp=${timeStamp}',
-       '/css/styles.css?timestamp=${timeStamp}',
-       '/js/dbhelper.js?timestamp=${timeStamp}',
-	   '/js/restaurant_info.js?timestamp=${timeStamp}',
-	   '/js/img/1.jpg?timestamp=${timeStamp}',
-	   
+			  './',
+              './index.html',
+              './restaurant.html',
+              './css/styles.css',
+              './data/restaurants.json',
+              './js/dbhelper.js',
+              './js/main.js',
+              './js/restaurant_info.js',
+              './img/1.jpg',
+              './img/2.jpg',
+              './img/3.jpg',
+              './img/4.jpg',
+              './img/5.jpg',
+              './img/6.jpg',
+              './img/7.jpg',
+              './img/8.jpg',
+              './img/9.jpg',
+              './img/10.jpg'
       ])
           .then(() => self.skipWaiting());
     })

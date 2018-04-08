@@ -60,6 +60,8 @@ header{
 #maincontent {
   min-height: 100%;
   width: 100%;
+	  display: flex;
+		flex-wrap: wrap;
 }
 #footer {
   background-color: #444;
@@ -127,7 +129,7 @@ nav h1 a {
 #map {
   height: 400px;
   width: 100%;
-      display:flex;
+  display:flex;
   flex-wrap: wrap;
   background-color: #ccc;
 }
@@ -358,12 +360,8 @@ nav h1 a {
     color: #01447e;
     text-decoration: underline;
 }
-@media screen and (max-width:700px) {
-    .restaurant-container {
-        width: 100%
-    }
-}
-@media screen and (max-width: 320px){
+
+@media screen and (max-width: 350px){
 	.filter-options select {
     background-color: white;
     /* border: 1px solid #fff; */
@@ -416,8 +414,24 @@ nav h1 a {
   margin: 0;
   font-size: 7pt;
 }
+.inside #footer {
+	width: 100%;
 }
-@media screen and (min-width: 321px) and (max-width: 480px){
+.inside #map-container {
+	position:absolute;
+	width:100%;
+	float: left;
+}
+#restaurant-container, #reviews-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    padding: 10px 10px 50px;
+    width: 100%;
+	float:left;
+}
+
+}
+@media screen and (min-width: 351px) and (max-width: 550px){
 	.filter-options select {
     background-color: white;
     letter-spacing: 0;
@@ -470,8 +484,25 @@ nav h1 a {
     max-width: 100%;
     min-height: 40%;
 }
+.inside #footer {
+	width: 100%;
 }
-@media screen and (min-width:481px) and (max-width: 750px) {
+.inside #map-container {
+	position:absolute;
+	width:100%;
+	float: left;
+}
+#restaurant-container, #reviews-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    padding: 40px 40px 30px;
+    width: 100%;
+	float:left;
+	left: 0;
+	display: block;
+}
+}
+@media screen and (min-width:551px) and (max-width: 750px) {
     .restaurant-container {
         width: 45%;
     }	
@@ -519,9 +550,29 @@ nav h1 a {
     max-width: 100%;
     min-height: 45%;
 }
+.inside #footer {
+	width: 100%;
+}
+.inside #map-container {
+	position:absolute;
+	width:100%;
+	z-index: 1000;
+	float: left;
+}
+#restaurant-container, #reviews-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    padding: 40px 40px 30px;
+	position:absolute;
+    width: 100%;
+	float:left;
+	left: 0;
+	display: block;
+}
 }
 @media screen and (min-width:1300px) {
     .restaurant-container {
         width: 30%;
     }
 }
+
